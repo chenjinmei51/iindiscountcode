@@ -1,0 +1,49 @@
+/* ✅ 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    text-align: left;
+}
+
+/* ✅ Banner */
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* ✅ 导航栏 */
+.navbar {
+    background: #0073e6;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* ✅ 课程折扣 */
+.discount-box {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.cta-button {
+    background: #ffcc00;
+    padding: 12px 20px;
+    text-decoration: none;
+}
