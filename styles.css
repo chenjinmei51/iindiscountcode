@@ -94,23 +94,20 @@ body {
 .how-to-use h2 {
     font-size: 28px;
     color: #0073e6;
-    margin-bottom: 20px;
-}
-
-.steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .step {
     background: #f8f9fa;
     padding: 20px;
-    width: 250px;
+    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     transition: transform 0.3s ease;
 }
 
@@ -118,22 +115,22 @@ body {
     transform: scale(1.05);
 }
 
-.step img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
 .step h3 {
-    font-size: 18px;
+    font-size: 22px;
     color: #333;
     margin-bottom: 10px;
 }
 
 .step p {
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
+    margin-bottom: 15px;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .cta-button {
@@ -151,6 +148,7 @@ body {
 .cta-button:hover {
     background: #ffdb4d;
 }
+
 
 
 .hero {
