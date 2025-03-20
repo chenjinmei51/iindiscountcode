@@ -1,0 +1,65 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.hero {
+    background: #0073e6;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.hero h1 span {
+    color: #ffcc00;
+}
+
+.discount-box {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    width: 280px;
+}
+
+.discount-box input {
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    font-weight: bold;
+    color: #0073e6;
+}
+
+.discount-box button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #ffdb4d;
+}
+
+.countdown-text {
+    
