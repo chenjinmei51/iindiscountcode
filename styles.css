@@ -1,174 +1,135 @@
-/* Basic Styles */
+/* ✅ 全局样式 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     background: #f8f9fa;
 }
 
-/* Courses Section */
-.courses {
-    text-align: center;
-    padding: 50px 20px;
-    background: #f8f9fa;
-}
-
-.courses h2 {
-    font-size: 28px;
-    color: #0073e6;
-    margin-bottom: 20px;
-}
-
-.course-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.course-box {
-    background: #fff;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.course-box:hover {
-    transform: scale(1.05);
-}
-
-.course-box h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.course-box p {
-    font-size: 14px;
-    color: #666;
-}
-
-.price {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.price s {
-    color: #ff4d4d;
-    font-size: 16px;
-}
-
-.discounted {
-    font-size: 20px;
-    color: #28a745;
-    font-weight: bold;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #ffcc00;
-    color: #000;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.cta-button:hover {
-    background: #ffdb4d;
-}
-
-/* How to Use Discount Code Section */
-.how-to-use {
-    text-align: center;
-    padding: 50px 20px;
-    background: #ffffff;
-}
-
-.how-to-use h2 {
-    font-size: 28px;
-    color: #0073e6;
-    margin-bottom: 30px;
-}
-
-.step {
-    background: #f8f9fa;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 80%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease;
-}
-
-.step:hover {
-    transform: scale(1.05);
-}
-
-.step h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.step p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.step img {
+/* ✅ Banner */
+.banner img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    display: block;
 }
 
-.cta-button {
-    display: inline-block;
-    background: #ffcc00;
-    color: #000;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.cta-button:hover {
-    background: #ffdb4d;
-}
-
-
-
-.hero {
+/* ✅ 导航栏样式 */
+.navbar {
     background: #0073e6;
-    color: #fff;
-    padding: 50px 20px;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.hero h1 span {
-    color: #ffcc00;
-}
-
-.discount-box {
-    margin: 20px auto;
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: #fff;
-    border-radius: 8px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #005bb5;
+}
+
+/* ✅ 下拉菜单 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    color: #0073e6;
     padding: 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background: #f8f9fa;
+}
+
+/* ✅ 移动端导航（折叠式菜单） */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0073e6;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* ✅ Main 区 */
+.main-content {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ 折扣码 */
+.discount-box {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
     width: 280px;
 }
 
@@ -181,29 +142,36 @@ body {
     color: #0073e6;
 }
 
-.discount-box button {
-    background: #ffcc00;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
 .cta-button {
-    display: inline-block;
     background: #ffcc00;
-    color: #000;
-    padding: 15px 25px;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
+    color: black;
+    padding: 12px 20px;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .cta-button:hover {
     background: #ffdb4d;
 }
 
-.countdown-text {
-    
+/* ✅ Footer */
+.footer {
+    background: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
