@@ -93,56 +93,99 @@ img {
   }
 }
 
-/* ✅ 主内容区 */
+/* ✅ Main 内容区样式 */
 .main {
-  padding: 40px 0;
+    padding: 40px 0;
 }
 
 .main h1 {
-  font-size: 28px;
-  color: #0073e6;
+    font-size: 26px;
+    color: #0073e6;
+    text-align: left;
 }
 
-.discount-box {
-  display: flex;
-  max-width: 280px;
-  margin: 20px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
+/* ✅ 折扣码展示框 */
+.coupon-box {
+    background: #fff;
+    border: 2px solid #ffcc00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px;
 }
 
-.discount-box input {
-  flex: 1;
-  border: none;
-  padding: 10px;
-  font-size: 18px;
-  color: #0073e6;
-  text-align: center;
+/* ✅ 头部 - 主要折扣信息 */
+.coupon-header h2 {
+    font-size: 30px;
+    color: #28a745;
+    margin: 0;
 }
 
-.discount-box button {
-  background: #ffcc00;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-weight: bold;
+.coupon-header p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
-.cta-button {
-  display: inline-block;
-  margin-top: 10px;
-  background: #ffcc00;
-  color: #000;
-  padding: 12px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
+/* ✅ 验证信息 */
+.verified {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-.cta-button:hover {
-  background: #ffdb4d;
+/* ✅ 折扣码输入框 */
+.discount-code {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 280px;
 }
+
+.discount-code input {
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    flex: 1;
+    font-weight: bold;
+    background: none;
+}
+
+.discount-code button {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* ✅ 底部信息 */
+.success-message {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.coupon-screenshot img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.payment-methods {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.payment-methods img {
+    width: 60px;
+    margin-left: 5px;
+}
+
 
 /* ✅ Footer */
 .footer {
