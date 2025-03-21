@@ -295,7 +295,15 @@ img {
     height: auto;
     border-radius: 5px;
 }
-
+/* ✅ 课程关键词提示文本样式 */
+.course-keyword-note {
+  margin-top: 10px;
+  font-size: 15px;
+  font-style: italic;
+  color: #444;
+  line-height: 1.6;
+  max-width: 800px;
+}
 /* ✅ 响应式优化（手机端） */
 @media (max-width: 768px) {
     .discount-percent {
@@ -324,6 +332,10 @@ img {
     .copy-code button {
         width: 100%; /* 让按钮铺满 */
     }
+   .course-keyword-note {
+    font-size: 14px;
+    padding: 0 10px;
+  }
 }
 
 
