@@ -141,6 +141,28 @@ img {
     border-right: 2px solid #ddd;
     text-align: center;
 }
+/* ✅ 价格信息 */
+.price-info {
+    font-size: 16px;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #ff4d4d;
+}
+
+.discounted-price {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.savings {
+    color: #28a745;
+    font-weight: bold;
+}
 
 /* ✅ 折扣码区域 */
 .copy-code {
