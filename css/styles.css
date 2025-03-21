@@ -93,7 +93,7 @@ img {
   }
 }
 
-/* ✅ Main 内容区样式 */
+/* ✅ 主内容区 */
 .main {
     padding: 40px 0;
 }
@@ -104,86 +104,123 @@ img {
     text-align: left;
 }
 
-/* ✅ 折扣码展示框 */
-.coupon-box {
-    background: #fff;
-    border: 2px solid #ffcc00;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+/* ✅ 折扣码表格 */
+.coupon-table {
+    width: 100%;
     max-width: 800px;
-}
-
-/* ✅ 头部 - 主要折扣信息 */
-.coupon-header h2 {
-    font-size: 30px;
-    color: #28a745;
-    margin: 0;
-}
-
-.coupon-header p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* ✅ 验证信息 */
-.verified {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-/* ✅ 折扣码输入框 */
-.discount-code {
-    display: flex;
-    align-items: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #ddd;
     background: #f8f9fa;
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 280px;
 }
 
-.discount-code input {
-    border: none;
+/* ✅ 表头 */
+.table-header {
+    background: #0073e6;
+    color: white;
     font-size: 18px;
     text-align: center;
-    flex: 1;
-    font-weight: bold;
-    background: none;
+    padding: 10px;
 }
 
-.discount-code button {
+/* ✅ 折扣信息 */
+.discount-percent {
+    font-size: 22px;
+    font-weight: bold;
+    color: #28a745;
+    text-align: center;
+    padding: 10px;
+    border-right: 2px solid #ddd;
+}
+
+/* ✅ 认证信息 */
+.verified,
+.users {
+    font-size: 14px;
+    padding: 10px;
+    border-right: 2px solid #ddd;
+    text-align: center;
+}
+
+/* ✅ 折扣码区域 */
+.copy-code {
+    text-align: center;
+    padding: 10px;
+}
+
+.copy-code input {
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    background: #fff;
+    padding: 5px;
+    width: 80px;
+}
+
+.copy-code button {
     background: #ffcc00;
     border: none;
-    padding: 8px 15px;
+    padding: 5px 10px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
 }
 
-/* ✅ 底部信息 */
-.success-message {
-    color: #28a745;
-    font-weight: bold;
-}
-
-.coupon-screenshot img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.payment-methods {
+/* ✅ 折扣描述 */
+.coupon-description {
     font-size: 14px;
-    color: #666;
-    margin-top: 10px;
+    padding: 10px;
+    border-top: 2px solid #ddd;
 }
 
-.payment-methods img {
-    width: 60px;
-    margin-left: 5px;
+/* ✅ 代码有效状态 */
+.code-status {
+    font-size: 14px;
+    padding: 10px;
+    background: #d4edda;
+    color: #155724;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ✅ 详细说明 */
+.coupon-details {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ✅ 截图区域 */
+.screenshot {
+    text-align: center;
+    padding: 10px;
+}
+
+.screenshot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ✅ 响应式优化（手机端） */
+@media (max-width: 768px) {
+    .discount-percent {
+        font-size: 18px;
+    }
+
+    .verified,
+    .users {
+        font-size: 12px;
+    }
+
+    .coupon-description {
+        font-size: 12px;
+    }
+
+    .copy-code input {
+        width: 60px;
+    }
 }
 
 
