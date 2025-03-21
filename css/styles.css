@@ -164,10 +164,22 @@ img {
     font-weight: bold;
 }
 
-/* ✅ 折扣码区域 */
+/* ✅ 折扣码输入框自适应 */
 .copy-code {
     text-align: center;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ✅ 让折扣码自适应，不会被截断 */
+.code-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
 }
 
 .copy-code input {
@@ -177,9 +189,13 @@ img {
     font-weight: bold;
     background: #fff;
     padding: 5px;
-    width: 80px;
+    width: 100%;
+    overflow-x: auto;  /* 允许水平滚动 */
+    white-space: nowrap;  /* 避免换行 */
+    border-radius: 5px;
 }
 
+/* ✅ 复制按钮 */
 .copy-code button {
     background: #ffcc00;
     border: none;
@@ -187,6 +203,7 @@ img {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+    white-space: nowrap;  /* 确保按钮不换行 */
 }
 
 /* ✅ 折扣描述 */
@@ -240,8 +257,18 @@ img {
         font-size: 12px;
     }
 
+   .copy-code {
+        flex-direction: column; /* 让按钮在手机端折叠到下面 */
+        gap: 8px;
+    }
+
     .copy-code input {
-        width: 60px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .copy-code button {
+        width: 100%; /* 让按钮铺满 */
     }
 }
 
