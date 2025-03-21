@@ -517,22 +517,9 @@
       <p>© 2025 IIN Discount Code. All rights reserved.</p>
     </div>
   </footer>
+  <!-- ✅ 引入外部 JS 文件 -->
+  <script src="js/script.js"></script>
 
-  <!-- ✅ 折扣码 + 移动导航交互 -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("copyButton").addEventListener("click", function () {
-        let code = document.getElementById("discountCode");
-        code.select();
-        document.execCommand("copy");
-        alert("Discount code copied: " + code.value);
-      });
-
-      document.querySelector(".menu-toggle").addEventListener("click", function () {
-        document.querySelector(".nav-links").classList.toggle("active");
-      });
-    });
-  </script>
 
 </body>
 </html>
