@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 // 优先使用 Clipboard API（现代浏览器）
                 if (navigator.clipboard) {
                     navigator.clipboard.writeText(codeInput.value).then(() => {
-                        alert("Discount code copied: " + codeInput.value);
+                        alert("Copied:" + codeInput.value);
                     }).catch(err => {
                         console.error("Clipboard write failed", err);
                     });
                 } else {
                     // 兼容旧浏览器
                     document.execCommand("copy");
-                    alert("Discount code copied: " + codeInput.value);
+                    alert("Copied:" + codeInput.value);
                 }
             }
         });
