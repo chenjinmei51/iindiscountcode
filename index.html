@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIN Discount Code - Save 20% on Integrative Nutrition</title>
-    <meta name="description" content="Get the latest IIN Discount Code and save 20% on your Integrative Nutrition certification. Apply your discount now!">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <script defer src="js/script.js"></script>
-</head>
+    <meta name="description" content="Is MasterClass worth it? Honest reviews, subscription costs, best courses, and exclusive discounts.">
+    <meta name="keywords" content="Is MasterClass Worth It, MasterClass Reviews, MasterClass Subscription, MasterClass Discount, Best MasterClass Courses">
+    <meta name="author" content="Robert Larkin">
+    <link rel="canonical" href="https://iindiscountcode.com/">
+    <!-- Open Graph for social media sharing -->
+    <!-- Twitter Card for Twitter sharing -->
+    <!-- Structured Data / Schema.org for Google EEAT -->
+
 <body>
+    <!-- 手机菜单按钮 -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div class="hero-banner-top">
+<picture>
+  <source srcset="/images/MasterClassBanner_banner.webp" type="image/webp">
+  <img src="/images/MasterClassBanner_banner.webp" alt="MasterClass Banner - Learn From the World's Best" loading="lazy">
+</picture>
+</div>    
 
-    <!-- ✅ Banner 图 -->
-    <header class="banner">
-        <img src="images/banner.jpg" alt="IIN Discount Code Banner">
-    </header>
 
-    <!-- ✅ 导航栏（PC 下拉 & 移动端折叠式菜单） -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">IIN Discount Code</a>
-            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">IIN REVIEWS ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Review 1</a></li>
-                        <li><a href="#">Review 2</a></li>
-                        <li><a href="#">Review 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="desktop-nav">
+    <ul id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/disclaimer.html">Disclaimer</a></li>
+        <li><a href="/terms.html">Terms and Conditions</a></li>
+        <li><a href="/terms.html">Terms and Conditions</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- ✅ 主内容区 -->
-    <main class="main-content">
-        <h1>Get Your IIN Discount Code and Save 20% Today!</h1>
-        <p>Apply the latest <strong>IIN Discount Code</strong> to save 20% on your Integrative Nutrition courses.</p>
-        
-        <div class="discount-box">
-            <input type="text" id="discountCode" value="IIN20" readonly>
-            <button id="copyButton">Copy Code</button>
-        </div>
+    <header class="hero-header">
+    <h1>Is MasterClass Worth It? </h1>
+    <p>If you're looking for honest MasterClass reviews or wondering is MasterClass worth it, this guide covers everything — from the MasterClass subscription details to the latest MasterClass discounts available in 2025.</p>
+<div class="author-box">
+  
+  <div class="author-info">
+    <p><strong>Written by Robert Larkin</strong></p>
+    <p>Hi, I’m Robert — a dad, lifelong learner, and huge fan of MasterClass. Over the past year, I’ve explored dozens of MasterClass courses to improve my cooking, fix my sleep, and even help my son gain confidence on the basketball court. Through real experiences (and sometimes real struggles), I’ve learned how to use MasterClass not just for myself, but to grow as a family. I write honest reviews and share what really works — no fluff, just real talk. Hopefully, my story can help you decide if MasterClass is worth it for you too.</p>
+  </div>
+</div>
+</header>
 
-        <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Apply Discount Now</a>
-    </main>
+    <main>
 
-    <!-- ✅ Footer -->
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">About</a>
-            <a href="#">Disclaimer</a>
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Contact</a>
-            <a href="#">Advertising Disclosure</a>
-        </div>
-        <p>© 2024 IIN Discount Code. All Rights Reserved.</p>
-    </footer>
+        </main>
+<footer>
+    <p>&copy; 2025 IsMasterClassWorthIt.com |
+           <a href="/privacy-policy.html">Privacy Policy</a> |
+        <a href="/terms.html">Terms</a> |
+        <a href="/contact.html">Contact</a> |
+        <a href="/about.html">About</a> |
+        <a href="/disclaimer.html">Disclaimer</a> |
+        <a href="/advertising-disclosure.html">Advertising Disclosure</a>
+        </p>
+</footer>
 
+    <script>
+    // 切换菜单展开/关闭
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
+
+    // 点击其他地方关闭菜单
+    document.addEventListener('click', function(event) {
+        var menu = document.getElementById('menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('show');
+        }
+    });
+         // 点击菜单内链接时自动关闭菜单
+    document.querySelectorAll('#menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.getElementById('menu').classList.remove('show');
+        });
+    });
+</script>
 </body>
 </html>
