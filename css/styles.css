@@ -122,6 +122,19 @@ img {
     text-align: center;
     padding: 10px;
 }
+/* ✅ 默认状态：无下划线，颜色与普通文本一致 */
+.affiliate-link {
+    text-decoration: none; /* 去掉下划线 */
+    color: inherit; /* 继承父元素颜色 */
+    font-weight: inherit; /* 继承字体样式 */
+    transition: color 0.3s ease-in-out; /* 平滑颜色变化 */
+}
+
+/* ✅ 鼠标悬停时变金色 */
+.affiliate-link:hover {
+    color: #FFD700; /* 金色 */
+    text-decoration: none; /* 依然不显示下划线 */
+}
 
 /* ✅ 折扣信息 */
 .discount-percent {
