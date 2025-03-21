@@ -92,6 +92,14 @@ img {
     padding-left: 15px;
   }
 }
+/* ✅ 主内容区域整体居中 + 最大宽度限制 */
+.main.container {
+    max-width: 900px;          /* 控制内容最大宽度 */
+    margin: 0 auto;            /* 左右自动居中 */
+    padding: 40px 20px;        /* 上下留白 & 移动端边距 */
+    text-align: left;          /* 保持内容左对齐排版 */
+}
+
 
 /* ✅ 主内容区 */
 .main {
