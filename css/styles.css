@@ -323,6 +323,15 @@ img {
   line-height: 1.6;
   max-width: 800px;
 }
+.course-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
 /* ✅ 响应式优化（手机端） */
 @media (max-width: 768px) {
     .discount-percent {
@@ -368,6 +377,12 @@ img {
     font-size: 14px;
     padding: 0 10px;
   }
+    .course-explainer {
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
 }
 
 
