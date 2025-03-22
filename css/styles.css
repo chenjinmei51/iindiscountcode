@@ -115,11 +115,12 @@ img {
     text-align: left;
 }
 .share-section {
-      margin: 40px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     margin: 40px auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .share-section p {
