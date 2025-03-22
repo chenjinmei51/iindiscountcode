@@ -32,3 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+// ✅ 点击页面其他区域时自动关闭折叠菜单（移动端）
+document.addEventListener("click", function (e) {
+    const nav = document.querySelector(".nav-links");
+    const toggle = document.querySelector(".menu-toggle");
+
+    if (nav.classList.contains("active") && !nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove("active");
+    }
+});
