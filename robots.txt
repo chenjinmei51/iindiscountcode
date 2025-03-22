@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://iindiscountcode.com/sitemap.xml
