@@ -32,12 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-// ✅ 点击页面其他区域时自动关闭折叠菜单（移动端）
-document.addEventListener("click", function (e) {
-    const nav = document.querySelector(".nav-links");
-    const toggle = document.querySelector(".menu-toggle");
+// ✅ NEW: 点击页面其他区域时自动关闭折叠菜单（移动端）
+    document.addEventListener("click", function (e) {
+        const nav = document.querySelector(".nav-links");
+        const toggle = document.querySelector(".menu-toggle");
 
-    if (nav.classList.contains("active") && !nav.contains(e.target) && !toggle.contains(e.target)) {
-        nav.classList.remove("active");
-    }
+        // 如果菜单处于展开状态，且点击的不是菜单本身或按钮，则关闭
+        if (nav.classList.contains("active") && !nav.contains(e.target) && !toggle.contains(e.target)) {
+            nav.classList.remove("active");
+        }
+    });
 });
