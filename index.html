@@ -39,7 +39,56 @@
 </head>
 
 <body>
+<!-- 顶部通知栏 - 放置在导航栏上方 -->
+<style>
+.deal-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000; /* 黑色背景 */
+  color: #fff; /* 白色文字 */
+  padding: 12px 0;
+  z-index: 1000; /* 确保显示在导航栏上方 */
+  text-align: center; /* 文字居中 */
+}
+.deal-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto; /* 容器居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 内部内容居中 */
+}
+.deal-bar-close {
+  /* 关闭按钮样式（可选） */
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: #fff;
+  cursor: pointer;
+}
+.deal-bar-btn {
+  margin-left: 15px;
+  background-color: #f00; /* 按钮颜色可自定义 */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
 
+<nav class="deal-bar">
+  <div class="deal-bar">
+    <svg class="deal-bar-close" viewBox="0 0 24 24">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+    </svg>
+    <div class="deal-bar-inner"> 
+      <span>Class starts June 30! Claim a tuition assistance scholarship for the Health Coach Training Program with code JUNE40.</span>
+      <a href="https://sldr.page.link/3u7up" class="deal-bar-btn desktop">Shop Now</a>
+    </div>
+  </div>
+</nav>
   <!-- ✅ Banner 区 -->
 
   <!-- ✅ 导航栏 -->
