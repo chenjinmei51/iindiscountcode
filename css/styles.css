@@ -13,7 +13,7 @@ img {
 }
 .colored-quote {
   /* 竖线宽度、样式、颜色 */
-  border-left: 4px solid #FF5722;
+  border-left: 4px solid #d3d3d3;
   /* 让文字别贴在边框上 */
   padding-left: 12px;
   /* （可选）调整整体内边距或字体样式 */
