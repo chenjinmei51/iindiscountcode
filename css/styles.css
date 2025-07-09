@@ -27,6 +27,42 @@ img {
   text-align: left;
 }
 
+/* 目录美化 */
+.toc {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.toc h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc ul li {
+    margin-bottom: 10px;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+    color: #D4AF37; /* 金色悬浮 */
+}
+
 /* ✅ Banner */
 .banner img {
   width: 100%;
